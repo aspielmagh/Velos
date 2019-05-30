@@ -76,8 +76,8 @@
         jQuery(document).ready(function () {
             $("#StudyCatHeader").addClass("nonechecked");
 
-            var minid = 73;
-            var maxid = 74 + 1;
+            var minid = 34;
+            var maxid = 47 + 1;
 
 
             for (j = minid; j < maxid; j++) {
@@ -85,7 +85,7 @@
 	
                  if ($("input:checkbox[onclick*=''," + j + "'']").attr("checked")) {
                      $("#StudyCatHeader").removeClass("nonechecked");
-                     alert(j + ":  nonechecked class removed at load due to a checked box.");
+                     break;
                 };
             }
 
@@ -102,7 +102,7 @@
 
                        if ($("input:checkbox[onclick*=''," + jj + "'']").attr("checked")) {
                            $("#StudyCatHeader").removeClass("nonechecked");
-                           alert(jj + ":  nonechecked class will be removed at click  due to a checked box. ");
+                           break;
 
                         };
                     }
